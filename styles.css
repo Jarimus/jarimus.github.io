@@ -701,7 +701,7 @@ body {
 
 p {
   font-size: 18px;
-  width: 50%;
+  width: 100%;
   margin: 20px auto;
 }
 
@@ -737,14 +737,14 @@ a:hover {
 }
 
 #welcome-section {
-  height: 100vh;
+  height: max(100vh, fit-content);
   margin-top: 70px;
   scroll-margin-top: 500px;
 }
 
 #my-pic {
   margin: auto;
-  height: 50%;
+  height: 200px;
   display: block;
   margin: 20px auto;
 }
@@ -803,16 +803,16 @@ figcaption {
 @media (max-width: 550px) {
 
   #welcome-section {
-    margin-top: 40px;
-    scroll-margin-top: 70px;
+    margin-top: 130px;
+    scroll-margin-top: 200px;
   }
 
   #my-pic {
-    height: 25%;
+    height: 200px;
   }
 
   #projects {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 150px;
   }
 
   #header {
@@ -821,11 +821,12 @@ figcaption {
 
   #navbar {
     margin: 5px auto;
+    display: grid;
   }
 
   .nav-button {
-    margin: 3px auto;
-    font-size: 18px;
+    margin: 5px auto;
+    font-size: 14px;
   }
 
 }
