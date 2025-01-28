@@ -1,5 +1,5 @@
-/* Not my own .css but the universally free simple.css
-I do have modified some of the values to my liking. Modifications at the bottom. */
+/* I have used the simple.css as a template. I have removed and edited some of the values.
+I also have made some adjustements of my own, which can be found at the bottom. */
 
 /* Global variables. */
 :root {
@@ -96,8 +96,7 @@ I do have modified some of the values to my liking. Modifications at the bottom.
   }
   
   body > footer {
-    margin-top: 4rem;
-    padding: 2rem 1rem 1.5rem 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
     color: var(--text-light);
     font-size: 0.9rem;
     text-align: center;
@@ -699,10 +698,16 @@ body {
   text-align: center;
 }
 
-p {
+main p {
+  font-size: 18px;
+  width: min(500px, 100%);
+  margin: 20px auto;
+}
+
+footer p {
   font-size: 18px;
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 a {
@@ -803,7 +808,7 @@ figcaption {
 @media (max-width: 550px) {
 
   #welcome-section {
-    margin-top: 130px;
+    margin-top: 40px;
     scroll-margin-top: 200px;
   }
 
@@ -812,21 +817,35 @@ figcaption {
   }
 
   #projects {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 60px;
   }
 
   #header {
     height: fit-content;
   }
 
-  #navbar {
-    margin: 5px auto;
-    display: grid;
-  }
 
   .nav-button {
     margin: 5px auto;
     font-size: 14px;
   }
 
+}
+
+@media (max-width: 350px) {
+
+  #welcome-section {
+    margin-top: 130px;
+    scroll-margin-top: 200px;
+  }
+
+  #projects {
+    scroll-margin-top: 150px;
+  }
+
+  #navbar {
+    margin: 5px auto;
+    display: grid;
+  }
+  
 }
