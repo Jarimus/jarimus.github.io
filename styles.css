@@ -790,10 +790,8 @@ figcaption {
   object-position: -50px 0;
 }
 
-@media screen {
+@media (min-width: 550px) {
 
-
-    /* plus(+) refers to a neighboring element, (~) would also work, as it refers to a sibling (same parent) */
     .project-tile:hover > figcaption {
       font-size: 36px;
     }
