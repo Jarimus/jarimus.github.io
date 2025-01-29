@@ -781,12 +781,12 @@ h1 {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  object-position: 0;
+  object-position: top left;
   transition-duration: 0.5s;
 }
 
-#project-img3 {
-  object-position: -50px 0;
+#project-img3, #project-img4 {
+  object-position: center center;
 }
 
 @media (min-width: 550px) {
