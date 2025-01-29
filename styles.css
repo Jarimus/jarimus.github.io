@@ -692,8 +692,10 @@ I also have made some adjustements of my own, which can be found at the bottom. 
   }
 
 
-
+/* ####################################*/
 /* My personal modifications down here */
+/* ####################################*/
+
 body {
   text-align: center;
 }
@@ -710,12 +712,7 @@ footer p {
   margin: 0 auto;
 }
 
-a {
-  transition-duration: 1s;
-}
-
 a:hover {
-  color: rgb(209, 43, 43);
 }
 
 #header {
@@ -774,8 +771,13 @@ h1 {
   margin: 0 auto;
 }
 
-figcaption {
+.fig-caption {
   font-size: 24px;
+  transition-duration: 0.5s;
+}
+
+.fig-caption:hover {
+  color: rgb(209, 43, 43);
 }
 
 .project-img {
@@ -783,7 +785,7 @@ figcaption {
   height: 300px;
   object-fit: cover;
   object-position: 0;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 #project-img3 {
@@ -792,11 +794,11 @@ figcaption {
 
 @media (min-width: 550px) {
 
-    .project-tile:hover > figcaption {
+    .project-tile:hover .fig-caption {
       font-size: 36px;
     }
   
-    .project-tile:hover > .project-img {
+    .project-tile:hover .project-img {
       width: 800px;
       height: 640px;
     }
