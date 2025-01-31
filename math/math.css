@@ -1,3 +1,23 @@
 * {
     text-align: center;
 }
+
+.link-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+a {
+    transition-duration: 0.5s;
+    margin: 0 auto;
+}
+  
+a:hover {
+    color: rgb(209, 43, 43);
+}
+
+footer {
+    margin-top: 40px;
+}
