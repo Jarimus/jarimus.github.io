@@ -72,10 +72,13 @@ h1 {
 
 .fig-caption {
   font-size: 24px;
+}
+
+.fig-caption, footer a {
   transition-duration: 0.5s;
 }
 
-.fig-caption:hover {
+.fig-caption:hover, footer a:hover {
   color: rgb(209, 43, 43);
 }
 
@@ -91,7 +94,7 @@ h1 {
   object-position: center center;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 800px) {
 
     .project-tile:hover .fig-caption {
       font-size: 36px;
